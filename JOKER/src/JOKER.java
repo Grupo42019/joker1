@@ -6,7 +6,7 @@ public class JOKER {
     	Scanner sc = new Scanner (System.in);
 
         // QUESTION'S RELATED VARIABLES
-        String[] questions = {"Were Rachel and Ross on a break?", 
+        String[] questions = {"On the famous show Friends, there is a very .Were Rachel and Ross on a break?", 
                               "In the \"Monday Night Football\", the group of friends promised each other they would only see the Super Bowl game when they were all together."+ \t + "Who was the only person that didn't break the promise?",
                               "Why did Rick turn into a pickle?",
                               "Who is never tempted by the ring?",
