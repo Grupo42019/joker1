@@ -18,14 +18,81 @@ public class JOKER {
                               "What is Bojack's job?",
                               "How does Will's mother manage to comunicate with him?",
                               "Why does the elevator not work?"};
+        
         String[][] allOptions = {
             {
                 "Yes",
                 "No",
                 "They were never together",
                 "Ross says they were"
-             }
-            
+             },
+            {
+                "Marshall & Lily",
+                "Barney",
+                "Ted",
+                "Robin"
+             },
+            {
+                "He wanted to challenge his abilities",
+                "He didn't want to go to therapy with his family",
+                "He really liked pickles",
+                "He wanted to scare the cats"
+             },
+            {
+                "Bilbo",
+                "Boromir",
+                "Galadriel",
+                "Sam"
+             },
+            {            
+                "Clothes",
+                "A sock",
+                "A magic spell",
+                "Dobby ran away"
+             },
+            { 
+                "Luke Skywalker",
+                "Yoda",
+                "Count Dooku",
+                "Darth Vader"
+             },
+            {    
+                "He was very shy",
+                "He wasn't very smart",
+                "In reality, he was a DJ from Jacksonville",
+                "He killed someone"
+             },
+            {              
+                "Michael",
+                "T-bag",
+                "Bellick",
+                "Sucre"
+             },
+            {
+                "Chuck voted for her 150 times",
+                "She was really popular",
+                "She threated her opponents",
+                "She didn't actually win"
+             },
+            {
+                "stripper",
+                "actor",
+                "hairdresser",
+                "teacher"
+             },
+            { 
+                "Mobile phone",
+                "Facebook",
+                "Christmas Lights",
+                "Eleven"
+              },
+            { 
+                "No one cares",
+                "Penny pressed all the bottons and it broke",
+                "Sheldon doesn't allow anyone in there because he doesn't think its safe",
+                "Sheldon did a crazy experience"
+            } 
+            };
                     
         int[] correctAnswers = Questions.correctAnswers.clone();
 
