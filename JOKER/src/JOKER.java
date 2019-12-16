@@ -109,9 +109,13 @@ public class JOKER {
         Utils.printGreeting("JOKER", "$", false);
 
         // GAME LOOP
+        for(round=0; round<12; round++){
+
         // For loop
             // Imprimir Status
+            printStatus(round, 
             // Imprimir Questões
+        printQuestions(round, questions);
 
             // Definir array de booleans para indicar quais opções de respostas serão apresentadas.
             // Definir variável de controle do Do-While loop abaixo
