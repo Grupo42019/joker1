@@ -4,8 +4,7 @@ public class JOKER {
     public static void main(String[] args) throws InterruptedException {
     	
     	Scanner sc = new Scanner (System.in);
-
-        // QUESTION'S RELATED VARIABLES
+        
         String[] questions = {"On the famous show FRIENDS, there is a very iconic moment that raised many opinions about Ross'a dn Rachels' relationship."+ \t +"Were Rachel and Ross on a break?", 
                               "On the show HOW I MET YOUR MOTHER, in the episode: \"Monday Night Football\", the group of friends promised each other they would only see the Super Bowl game when they were all together."+ \t + "Who was the only person that didn't break the promise?",
                               "In RICK AND MORTY there is a amusing episode: Pickle Rick."+ \t +"Why did Rick turn into a pickle?",
@@ -96,6 +95,10 @@ public class JOKER {
                     
         int[] correctAnswers ={3, 2, 1, 3, 0, 3, 2, 1, 0, 1, 2, 3};
 
+         // QUESTION'S RELATED VARIABLES
+        
+        
+        
         // VARIABLES -----------------------//
         int[] moneyTree = {0, 200, 500, 1000, 3000, 10000, 50000};
         int moneyTreeIndex = 0;
@@ -142,11 +145,11 @@ public class JOKER {
     	// DIZER AO UTILIZADOR EM QUE RONDA ESTÁ, QUANDO DINHEIRO TEM E/OU GANHOU E QUANTOS JOKERS TEM
     }
 
-    static void printQuestion(int round, String question) {
-    	// METER AS PERGUNTAS
+    static void printQuestion(int round, String [] question) {
     	
     	for(round=0; round<12; round++) {
-    		System.out.println(question);}
+            
+    		System.out.println(question[round]);}
     	
     }
 
