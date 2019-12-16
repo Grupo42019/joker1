@@ -94,7 +94,7 @@ public class JOKER {
             } 
             };
                     
-        int[] correctAnswers = Questions.correctAnswers.clone();
+        int[] correctAnswers ={3, 2, 1, 3, 0, 3, 2, 1, 0, 1, 2, 3};
 
         // VARIABLES -----------------------//
         int[] moneyTree = {0, 200, 500, 1000, 3000, 10000, 50000};
