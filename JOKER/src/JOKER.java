@@ -4,19 +4,7 @@ public class JOKER {
     public static void main(String[] args) throws InterruptedException {
     	
     	Scanner sc = new Scanner (System.in);
-        
-        String[] questions = {"On the famous show FRIENDS, there is a very iconic moment that raised many opinions about Ross'a dn Rachels' relationship."+ \t +"Were Rachel and Ross on a break?", 
-                              "On the show HOW I MET YOUR MOTHER, in the episode: \"Monday Night Football\", the group of friends promised each other they would only see the Super Bowl game when they were all together."+ \t + "Who was the only person that didn't break the promise?",
-                              "In RICK AND MORTY there is a amusing episode: Pickle Rick."+ \t +"Why did Rick turn into a pickle?",
-                              "In the movie LORD OF THE RINGS, there is only one person who is strong enough."+\t+" Who is never tempted by the ring?",
-                              "In the historic movie HARRY POTTER there is a character that everyone adores and has a targic ending, Dobby.What would give Dobby his freadom?",
-                              "Who killed Emperor?",
-                              "What was wrong with Jianyu, the Buddhist Monk?",
-                              "What's the name of the caracther that lost his hand?",
-                              "How did Blair win the prom?",
-                              "What is Bojack's job?",
-                              "How does Will's mother manage to comunicate with him?",
-                              "Why does the elevator not work?"};
+>master
         
         String[][] allOptions = {
             {
