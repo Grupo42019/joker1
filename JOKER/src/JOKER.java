@@ -151,11 +151,9 @@ public class JOKER {
 
     static void printQuestion(int round, String [] question) {
     	
-    	for(round=0; round<12; round++) {
-            
-    		System.out.println(question[round]);}
+    System.out.println(question[round]);
     	
-    }
+   }
 
     static void printOptions(String[] options, boolean[] includedOptions) {
     	// METER AS OPÇÕES E INDICAR QUAL A CERTA E QUAIS AS ERRADAS
