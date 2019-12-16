@@ -6,18 +6,18 @@ public class JOKER {
     	Scanner sc = new Scanner (System.in);
 
         // QUESTION'S RELATED VARIABLES
-        String[] questions = {"On the famous show FRIENDS, there is a very iconic moment that raised many opinions about Ross'a dn Rachels' relationship."+ \t +"Were Rachel and Ross on a break?", 
-                              "On the show HOW I MET YOUR MOTHER, in the episode: \"Monday Night Football\", the group of friends promised each other they would only see the Super Bowl game when they were all together."+ \t + "Who was the only person that didn't break the promise?",
-                              "In RICK AND MORTY there is a amusing episode: Pickle Rick."+ \t +"Why did Rick turn into a pickle?",
-                              "In the movie LORD OF THE RINGS, there is only one person who is strong enough."+\t+" Who is never tempted by the ring?",
-                              "In the historic movie HARRY POTTER there is a character that everyone adores and has a targic ending, Dobby.What would give Dobby his freadom?",
-                              "Who killed Emperor?",
-                              "What was wrong with Jianyu, the Buddhist Monk?",
-                              "What's the name of the caracther that lost his hand?",
-                              "How did Blair win the prom?",
-                              "What is Bojack's job?",
-                              "How does Will's mother manage to comunicate with him?",
-                              "Why does the elevator not work?"};
+        String[] questions = {"On the famous show FRIENDS, there is a very iconic moment that raised many opinions about Ross' and Rachels' relationship.\n Were Rachel and Ross on a break?", 
+                              "On the show HOW I MET YOUR MOTHER, in the episode: \"Monday Night Football\", the group of friends promised each other they would only see the Super Bowl game when they were all together.\n Who was the only person that didn't break the promise?",
+                              "ON the show RICK AND MORTY there is a amusing episode: Pickle Rick.\n Why did Rick turn into a pickle?",
+                              "In the movie LORD OF THE RINGS, there is only one person who is strong enough.\n Who is never tempted by the ring?",
+                              "In the historic movie HARRY POTTER there is a character that everyone adores and has a targic ending, Dobby.\n What would give Dobby his freadom?",
+                              "In STAR WARS there is a prominent doubt.\n Who killed Emperor?",
+                              "THE GOOD PLACE is a shopw that premiered in 2016. Among many twists and truns many things seemed to be wrong.\n What was wrong with Jianyu, the Buddhist Monk?",
+                              "The enigmatic PRISON BREAK made it to many peoples favourite show.\n What's the name of the caracther that lost his hand?",
+                              "Many teens were hooked on the show GOSSIP GIRL, among other scenes, the love story between Chuck and Blair was very memorable.\n How did Blair win the prom?",
+                              "The show BOJACK HORSEMEN, is an american adult animated comedy.\n What is Bojack's job?",
+                              "STRANGER THINGS, is a show surrounded by science fiction and terror.\n How does Will's mother manage to comunicate with him?",
+                              "The cientific show BIG BANG THEORY, made many families laugh since it's enjoyed by all ages.\n Why does the elevator not work?"};
         
         String[][] allOptions = {
             {
