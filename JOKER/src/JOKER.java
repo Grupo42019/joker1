@@ -6,7 +6,7 @@ public class JOKER {
     	Scanner sc = new Scanner (System.in);
 
         // QUESTION'S RELATED VARIABLES
-        String[] questions = Questions.questions.clone();
+        String[] questions = {"Were Rachel and Ross on a break?",;
         String[][] allOptions = Questions.options.clone();
         int[] correctAnswers = Questions.correctAnswers.clone();
 
@@ -22,38 +22,38 @@ public class JOKER {
         // GAME LOOP
         // For loop
             // Imprimir Status
-            // Imprimir Questıes
+            // Imprimir Quest√µes
 
-            // Definir array de booleans para indicar quais opÁıes de respostas ser„o apresentadas.
-            // Definir vari·vel de controle do Do-While loop abaixo
+            // Definir array de booleans para indicar quais op√ß√µes de respostas ser√£o apresentadas.
+            // Definir vari√°vel de controle do Do-While loop abaixo
 
             // Do-While loop
-                // Imprimir OpÁıes de Respostas
-                // Se o Concorrente escolher uma das opÁıes
-                    // Atualizar a vari·vel de controle do Do-While loop para interrompÍ-lo
+                // Imprimir Op√ß√µes de Respostas
+                // Se o Concorrente escolher uma das op√ß√µes
+                    // Atualizar a vari√°vel de controle do Do-While loop para interromp√™-lo
                     // Se a resposta do Concorrente estiver correta
                         // Atualizar os valores adequados
                         // Prover feedback ao Concorrente
                     // Se a resposta do Concorrente estiver errada
-                        // Penalizar os valores adequados (dica: s„o dois valores; considerar um array ñ veja o mÈtodo `penalizePlayer()`)
+                        // Penalizar os valores adequados (dica: s√£o dois valores; considerar um array ‚Äì veja o m√©todo `penalizePlayer()`)
                         // Prover feedback ao Concorrente
-                // Sen„o Se o Concorrente escolher um Joker
-                    // Se houver Joker disponÌvel
-                        // Alterar o array de booleans que indica as opÁıes a serem apresentadas (omitir uma incorreta)
-                        // Atualizar o n˙mero de Jokers (atenÁ„o para o valor n„o ser negativo)
-                    // Sen„o
-                        // Prover feedback ao Concorrente de que n„o h· Jokers
-                // Sen„o
-                    // Prover feedback de que o input n„o È v·lido.
+                // Sen√£o Se o Concorrente escolher um Joker
+                    // Se houver Joker dispon√≠vel
+                        // Alterar o array de booleans que indica as op√ß√µes a serem apresentadas (omitir uma incorreta)
+                        // Atualizar o n√∫mero de Jokers (aten√ß√£o para o valor n√£o ser negativo)
+                    // Sen√£o
+                        // Prover feedback ao Concorrente de que n√£o h√° Jokers
+                // Sen√£o
+                    // Prover feedback de que o input n√£o √© v√°lido.
 
-        // Imprimir conclus„o do Jogo
+        // Imprimir conclus√£o do Jogo
     }
     
-//M…TODOS
+//M√âTODOS
     
     static void printStatus(int round, int moneyEarned, int jokers) {
     	
-    	// DIZER AO UTILIZADOR EM QUE RONDA EST¡, QUANDO DINHEIRO TEM E/OU GANHOU E QUANTOS JOKERS TEM
+    	// DIZER AO UTILIZADOR EM QUE RONDA EST√Å, QUANDO DINHEIRO TEM E/OU GANHOU E QUANTOS JOKERS TEM
     }
 
     static void printQuestion(int round, String question) {
@@ -65,7 +65,7 @@ public class JOKER {
     }
 
     static void printOptions(String[] options, boolean[] includedOptions) {
-    	// METER AS OP«’ES E INDICAR QUAL A CERTA E QUAIS AS ERRADAS
+    	// METER AS OP√á√ïES E INDICAR QUAL A CERTA E QUAIS AS ERRADAS
     	
     
     }
@@ -81,17 +81,17 @@ public class JOKER {
 
     static void printOutcomeMessage(boolean answerIsCorrect) {
     
-    	System.out.println("A resposta correta È: ");
+    	System.out.println("A resposta correta √©: ");
     	
     }
 
     static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer) {
-    	// DIZER AO UTILIZADOR SE A RESPOSTA EST¡ CERTA OU N√O
+    	// DIZER AO UTILIZADOR SE A RESPOSTA EST√Å CERTA OU N√ÉO
     	
     	if() {
-    		System.out.println("A resposta est· correta!");
+    		System.out.println("A resposta est√° correta!");
     	} else {
-    		System.out.println("A resposta est· errada!");
+    		System.out.println("A resposta est√° errada!");
     	}
     }
    
@@ -103,12 +103,12 @@ public class JOKER {
     }
 
     static int[] penalizePlayer(int jokers, int moneyTreeIndex) {
-    	// A RESPOSTA EST¡ ERRADO LOGO APLICAR AS CONSEQU NCIAS
+    	// A RESPOSTA EST√Å ERRADO LOGO APLICAR AS CONSEQU√äNCIAS
     	
     }
 
     static void printConclusion(int moneyEarned, int jokers) {
-    	// SITUA«√O CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM
+    	// SITUA√á√ÉO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM
     
     	System.out.println("Ganhou " +moneyEarned+ ("euros. Tem, neste momento, "+jokers+" jokers."));
     }
