@@ -18,7 +18,15 @@ public class JOKER {
                               "What is Bojack's job?",
                               "How does Will's mother manage to comunicate with him?",
                               "Why does the elevator not work?"};
-        String[][] allOptions = Questions.options.clone();
+        String[][] allOptions = {
+            {
+                "Yes",
+                "No",
+                "They were never together",
+                "Ross says they were"
+             }
+            
+                    
         int[] correctAnswers = Questions.correctAnswers.clone();
 
         // VARIABLES -----------------------//
