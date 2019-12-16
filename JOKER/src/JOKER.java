@@ -155,10 +155,13 @@ public class JOKER {
     	
    }
 
-    static void printOptions(String[] options, boolean[] includedOptions) {
-    	// METER AS OPÇÕES E INDICAR QUAL A CERTA E QUAIS AS ERRADAS
+    static void printOptions(String[][] options, boolean[] includedOptions, int round) {
     	
-    
+        for (int i = 0; i < options.length; i++){
+            
+            System.out.println( options[round][i]);
+            
+          }   
     }
 
     static int readAnswer(Scanner sc) {
