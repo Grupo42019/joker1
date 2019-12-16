@@ -6,7 +6,18 @@ public class JOKER {
     	Scanner sc = new Scanner (System.in);
 
         // QUESTION'S RELATED VARIABLES
-        String[] questions = {"Were Rachel and Ross on a break?",;
+        String[] questions = {"Were Rachel and Ross on a break?", 
+                              "In the \"Monday Night Football\", the group of friends promised each other they would only see the Super Bowl game when they were all together."+ \t + "Who was the only person that didn't break the promise?",
+                              "Why did Rick turn into a pickle?",
+                              "Who is never tempted by the ring?",
+                              "What would give Dobby his freadom?",
+                              "Who killed Emperor?",
+                              "What was wrong with Jianyu, the Buddhist Monk?",
+                              "What's the name of the caracther that lost his hand?",
+                              "How did Blair win the prom?",
+                              "What is Bojack's job?",
+                              "How does Will's mother manage to comunicate with him?",
+                              "Why does the elevator not work?"};
         String[][] allOptions = Questions.options.clone();
         int[] correctAnswers = Questions.correctAnswers.clone();
 
