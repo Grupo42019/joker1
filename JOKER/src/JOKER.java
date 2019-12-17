@@ -199,13 +199,13 @@ public class JOKER {
     	return answer;
     }
 
-    static void printOutcomeMessage(boolean [][] a, String [][]  b, int c) {
+    static void printOutcomeMessage(boolean [][] booleanAnswers, String [][]  questionOptions, int randomQuestionNumber) {
     
     	System.out.println("A resposta correta é: ");
 	    
 	    for (int i = 0; i < 4; i ++) {
-		    if ( a[c][i] = true){
-			   System.out.println( b [c][i]);		    
+		    if ( booleanAnswers[randomQuestionNumber][i] == true){
+			   System.out.println( questionOptions[randomQuestionNumber][i]);		    
 	}		    
     }	
     }
