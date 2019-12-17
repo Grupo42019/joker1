@@ -232,7 +232,7 @@ public class JOKER {
 		    
 		    System.out.println("Uma das respostas que está incorreta é"  + allOptions [randomNumber][sai]);
 		    System.out.println("Tendo em conta esta informação, qual é a decisão final?"
-	readAnswer(sc)	;	
+		readAnswer(sc)	;
     }
    
     static int safelyDecreaseJoker(int jokers) {
