@@ -143,23 +143,20 @@ public class JOKER {
     
 //MÉTODOS
     
-    static void printStatus(int round, int moneyEarned, int jokers) {
-    	
-    	// DIZER AO UTILIZADOR EM QUE RONDA ESTÁ, QUANDO DINHEIRO TEM E/OU GANHOU E QUANTOS JOKERS TEM
+ // FEITO                      
+        static void printStatus(int round, int moneyEarned, int jokers) {
+    	System.out.println("Your on round number "+round+", you have "+moneyEarned+" and "+jokers+" jokers.");
     }
-
-    static void printQuestion(int round, String [] question) {
-    	
+// FEITO
+    static void printQuestion(int round, String [] question) {	
     System.out.println(question[round]);
     	
    }
-
+// DÚVIDAS
     static void printOptions(String[][] options, boolean[] includedOptions, int round) {
     	
         for (int i = 0; i < options.length; i++){
-            
-            System.out.println( options[round][i]);
-            
+            System.out.println( options[round][i]);   
           }   
     }
 
