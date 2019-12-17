@@ -221,7 +221,7 @@ public class JOKER {
 	    return correctAnswer;
     }
 
-    static boolean[] applyJoker(Scanner sc, int [] correctAnswer, int randomNumber, boolean [][] allOptions) {
+    static boolean[] applyJoker(Scanner sc, int [] correctAnswer, int randomNumber, boolean [][] allOptions, int jokers) {
 	    
     	int sai;
 	   
@@ -233,11 +233,15 @@ public class JOKER {
 		    System.out.println("One of the incorect answers is:"  + allOptions [randomNumber][sai]);
 		    System.out.println("Taking that into account, whats your final decision?");
 		readAnswer(sc)	;
+				       
+		joker--;
+				       
+				       
     }
    
     static int safelyDecreaseJoker(int jokers) {
     	// O UTILIZADOR UTILIZOU UM JOKER
-    	
+	    
     	System.out.println("The user has "+jokers+" jokers.");
     	return jokers;
     }
@@ -245,6 +249,19 @@ public class JOKER {
     static int[] penalizePlayer(int jokers, int moneyTreeIndex) {
     	// A RESPOSTA ESTÁ ERRADO LOGO APLICAR AS CONSEQUÊNCIAS
     	
+	 if (answer!= correctAnswer && joker>=3) {
+		jokers= jokers-3;
+		 
+	 }else if (answer!= correctAnswer && jokers=2) {
+		jokers=jokers-2;
+		 moneyTreeIndex--;
+		 
+	 }else if (answer!= correctAnswer && jokers=1) {
+		 jokers=jokers-1;
+		 moneyTreeIndex= moneyTreeIndex-2;
+		 
+	 }else if (answer!= correctAnswer && jokers=0) {
+		  moneyTreeIndex= moneyTreeIndex-3;
     }
 
     static void printConclusion(int moneyEarned, int jokers) {
