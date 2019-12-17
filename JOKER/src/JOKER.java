@@ -199,10 +199,15 @@ public class JOKER {
     	return answer;
     }
 
-    static void printOutcomeMessage(boolean answerIsCorrect) {
+    static void printOutcomeMessage(boolean [][] a, String [][]  b, int c) {
     
     	System.out.println("A resposta correta é: ");
-    	
+	    
+	    for (int i = 0; i < 4; i ++) {
+		    if ( a[c][i] = true){
+			   System.out.println( b [c][i]);		    
+	}		    
+    }	
     }
 
     static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer) {
