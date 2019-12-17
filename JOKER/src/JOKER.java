@@ -122,13 +122,14 @@ public class JOKER {
             printStatus(round, 
                         
             // Imprimir Questões
+	int questionNumber = randomNumber(0,11);
                
-            printQuestions(questions);
+            printQuestions(questions, questionNumber);
 
             // Definir array de booleans para indicar quais opções de respostas serão apresentadas.
             // Definir variável de controle do Do-While loop abaixo
-            
-            int questionOptions= printOptions( allOptions, boolean, randomQuestionNumber);    
+			
+            int questionOptions= printOptions( allOptions, boolean, questionNumber);    
             char answer= readAnswer(sc);
             // Do-While loop, Imprimir Opções de Respostas
                   
@@ -174,10 +175,8 @@ public class JOKER {
         return randomNumber;   
         }
 // DÚVIDAS
-    static void printQuestion(String [] question) {
-        
-    int randomQuestionNumber= randomNumber( 0, 11);
-    System.out.println(question[randomQuestionNumber]);	
+    static void printQuestion(String [] question, int a) {
+    System.out.println(question[randomNumber]);	
    }
 // DÚVIDAS
     static void printOptions(String[][] options, boolean[] includedOptions, int randomQuestionNumber) {
@@ -213,10 +212,10 @@ public class JOKER {
 	    return correctAnswer;
     }
 
-    static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer) {
+    static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer, int randomNumber) {
     	// DIZER AO UTILIZADOR SE A RESPOSTA ESTÁ CERTA OU NÃo
-	    
-	    int correctAnswer= printOutcomeMessage();
+<<
+	    int correctAnswer= printOutcomeMessage(right, allOptions, randomNumber);
 	    
     	if(answer==correctAnswer) {
     		System.out.println("A resposta está correta!");
