@@ -112,17 +112,24 @@ public class JOKER {
 
         // For loop
             // Imprimir Status
+            
             printStatus(round, 
             // Imprimir Questões
-        printQuestions(round, questions);
+               
+        printQuestions(questions);
 
             // Definir array de booleans para indicar quais opções de respostas serão apresentadas.
             // Definir variável de controle do Do-While loop abaixo
-
-            // Do-While loop
-                // Imprimir Opções de Respostas
-                // Se o Concorrente escolher uma das opções
-                    // Atualizar a variável de controle do Do-While loop para interrompê-lo
+            
+            char answer;
+            // Do-While loop, Imprimir Opções de Respostas
+                  
+                   do{
+                     System.ou.println("What is your final answer?"); 
+                   } while( answer != a || answer != b || answer != c || answer != j || answer != A || answer != B || answer != C ||answer != J);
+                   
+                        
+                   if( answer ==);
                     // Se a resposta do Concorrente estiver correta
                         // Atualizar os valores adequados
                         // Prover feedback ao Concorrente
@@ -152,8 +159,8 @@ public class JOKER {
         int randomNumber = (int) (Math.random() * ((max - min) + 1)) + min;
         return randomNumber;   
         }
-// FEITO
-    static void printQuestion(int round, String [] question) {
+// DÚVIDAS
+    static void printQuestion(String [] question) {
         
     int randomQuestionNumber= randomNumber( 0, 11);
     System.out.println(question[randomQuestionNumber]);	
