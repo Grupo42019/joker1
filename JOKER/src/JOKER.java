@@ -19,76 +19,76 @@ public class JOKER {
                               "The cientific show BIG BANG THEORY, made many families laugh since it's enjoyed by all ages.\n Why does the elevator not work?"};
         String[][] allOptions = {
             {
-                "Yes",
-                "No",
-                "They were never together",
-                "Ross says they were"
+                "A.Yes",
+                "B.No",
+                "C.They were never together",
+                "D.Ross says they were"
              },
             {
-                "Marshall & Lily",
-                "Barney",
-                "Ted",
-                "Robin"
+                "A.Marshall & Lily",
+                "B.Barney",
+                "C.Ted",
+                "D.Robin"
              },
             {
-                "He wanted to challenge his abilities",
-                "He didn't want to go to therapy with his family",
-                "He really liked pickles",
-                "He wanted to scare the cats"
+                "A.He wanted to challenge his abilities",
+                "B.He didn't want to go to therapy with his family",
+                "C.He really liked pickles",
+                "D.He wanted to scare the cats"
              },
             {
-                "Bilbo",
-                "Boromir",
-                "Galadriel",
-                "Sam"
+                "A.Bilbo",
+                "B.Boromir",
+                "C.Galadriel",
+                "D.Sam"
              },
             {            
-                "Clothes",
-                "A sock",
-                "A magic spell",
-                "Dobby ran away"
+                "A.Clothes",
+                "B.A sock",
+                "C.A magic spell",
+                "D.Dobby ran away"
              },
             { 
-                "Luke Skywalker",
-                "Yoda",
-                "Count Dooku",
-                "Darth Vader"
+                "A.Luke Skywalker",
+                "B.Yoda",
+                "C.Count Dooku",
+                "D.Darth Vader"
              },
             {    
-                "He was very shy",
-                "He wasn't very smart",
-                "In reality, he was a DJ from Jacksonville",
-                "He killed someone"
+                "A.He was very shy",
+                "B.He wasn't very smart",
+                "C.In reality, he was a DJ from Jacksonville",
+                "D.He killed someone"
              },
             {              
-                "Michael",
-                "T-bag",
-                "Bellick",
-                "Sucre"
+                "A.Michael",
+                "B.T-bag",
+                "C.Bellick",
+                "D.Sucre"
              },
             {
-                "Chuck voted for her 150 times",
-                "She was really popular",
-                "She threated her opponents",
-                "She didn't actually win"
+                "A.Chuck voted for her 150 times",
+                "B.She was really popular",
+                "C.She threated her opponents",
+                "D.She didn't actually win"
              },
             {
-                "stripper",
-                "actor",
-                "hairdresser",
-                "teacher"
+                "A.stripper",
+                "B.actor",
+                "C.hairdresser",
+                "D.teacher"
              },
             { 
-                "Mobile phone",
-                "Facebook",
-                "Christmas Lights",
-                "Eleven"
+                "A.Mobile phone",
+                "B.Facebook",
+                "C.Christmas Lights",
+                "D.Eleven"
               },
             { 
-                "No one cares",
-                "Penny pressed all the bottons and it broke",
-                "Sheldon doesn't allow anyone in there because he doesn't think its safe",
-                "Sheldon did a crazy experience"
+                "A.No one cares",
+                "B.Penny pressed all the bottons and it broke",
+                "C.Sheldon doesn't allow anyone in there because he doesn't think its safe",
+                "D.Sheldon did a crazy experience"
             } 
             };
                     
