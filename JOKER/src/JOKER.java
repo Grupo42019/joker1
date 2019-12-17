@@ -194,7 +194,7 @@ public class JOKER {
     	do{
             System.ou.println("What is your final answer?"); 
             answer = sc.next().charAt(0); 
-        } while( answer != a || answer != b || answer != c || answer != j || answer != A || answer != B || answer != C ||answer != J);
+        } while( answer != 'a' || answer != 'b' || answer != 'c' || answer != 'j' || answer != 'A' || answer != 'B' || answer != 'C' ||answer != 'J');
     	
     	return answer;
     }
