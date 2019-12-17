@@ -200,7 +200,7 @@ public class JOKER {
 
     static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  questionOptions, int randomQuestionNumber) {
     
-    	System.out.println("A resposta correta é: ");
+    	System.out.println("The correct answer is: ");
 	    
 	    for (int i = 0; i < 4; i ++) {
 		    if ( booleanAnswers[randomQuestionNumber][i] == true){
@@ -209,13 +209,13 @@ public class JOKER {
 	}		    
     }
 	   if(answer==correctAnswer) {
-    		System.out.println("A resposta está correta!");
+    		System.out.println("The answer is correct!");
 	
 	   } else if (answer == 'J'|| answer == 'j'){	 
 		   
 		   
        	} else {
-    		System.out.println("A resposta está errada!");
+    		System.out.println("The answer is wrong!");
 		   
     	} 
 	    return correctAnswer;
@@ -238,7 +238,7 @@ public class JOKER {
     static int safelyDecreaseJoker(int jokers) {
     	// O UTILIZADOR UTILIZOU UM JOKER
     	
-    	System.out.println("O utilizador tem "+jokers+".");
+    	System.out.println("The user has "+jokers+" jokers.");
     	return jokers;
     }
 
@@ -250,6 +250,6 @@ public class JOKER {
     static void printConclusion(int moneyEarned, int jokers) {
     	// SITUAÇÃO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM
     
-    	System.out.println("Ganhou " +moneyEarned+ ("euros. Tem, neste momento, "+jokers+" jokers."));
+    	System.out.println("Ganhou " +moneyEarned+ ("euros. At the moment you have " + jokers + " jokers."));
     }
 }
