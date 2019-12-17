@@ -199,20 +199,24 @@ public class JOKER {
     	return answer;
     }
 
-    static void printOutcomeMessage(boolean [][] booleanAnswers, String [][]  questionOptions, int randomQuestionNumber) {
+    static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  questionOptions, int randomQuestionNumber) {
     
     	System.out.println("A resposta correta é: ");
 	    
 	    for (int i = 0; i < 4; i ++) {
 		    if ( booleanAnswers[randomQuestionNumber][i] == true){
-			   System.out.println( questionOptions[randomQuestionNumber][i]);		    
+			   char correctAnswer= questionOptions[randomQuestionNumber][i];
+			   System.out.println(correctAnswer);
 	}		    
-    }	
+    }
+	    
+	    return correctAnswer;
     }
 
     static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer) {
-    	// DIZER AO UTILIZADOR SE A RESPOSTA ESTÁ CERTA OU NÃO
-    	
+    	// DIZER AO UTILIZADOR SE A RESPOSTA ESTÁ CERTA OU NÃo
+	    int correctAnswer= printOutcomeMessage();
+	    
     	if() {
     		System.out.println("A resposta está correta!");
     	} else {
