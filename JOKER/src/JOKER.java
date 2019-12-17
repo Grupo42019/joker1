@@ -234,7 +234,7 @@ public class JOKER {
 		    System.out.println("Taking that into account, whats your final decision?");
 		readAnswer(sc)	;
 				       
-		joker--;
+		int jokersAvailable= safelyDecreaseJoker(jokers);
 				       
 				       
     }
@@ -242,10 +242,13 @@ public class JOKER {
     static int safelyDecreaseJoker(int jokers) {
     	// O UTILIZADOR UTILIZOU UM JOKER
 	    
+	 jokers--;
+	    
     	System.out.println("The user has "+jokers+" jokers.");
     	return jokers;
     }
 
+		    
     static int[] penalizePlayer(int jokers, int moneyTreeIndex) {
     	// A RESPOSTA ESTÁ ERRADO LOGO APLICAR AS CONSEQUÊNCIAS
     	
