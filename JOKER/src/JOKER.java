@@ -93,6 +93,10 @@ public class JOKER {
             };
                     
         int[] correctAnswers ={3, 2, 1, 3, 0, 3, 2, 1, 0, 1, 2, 3};
+	    
+	boolean [][] rigth = new boolean [12][4];
+	    
+	booleanAnswers(boolean [][] rigth, int [] correctAnswers);
 
          // QUESTION'S RELATED VARIABLES
         
