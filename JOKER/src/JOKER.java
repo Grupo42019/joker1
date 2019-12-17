@@ -103,6 +103,8 @@ public class JOKER {
         int moneyTreeIndex = 0;
         int jokers = 7;
         Scanner scanner = new Scanner(System.in);
+        
+        
 
         // GAME OPENING
         Utils.printGreeting("JOKER", "$", false);
@@ -155,9 +157,11 @@ public class JOKER {
     	System.out.println("Your on round number "+round+", you have "+moneyEarned+" and "+jokers+" jokers.");
         } 
   // boolean correct answers  
-        static void booleanAnswers()  {
-               
-                        
+        static void booleanAnswers(boolean [][] a, int [] b)  {
+               for (int i = 0; i < 12; i++) {
+			int c = b[i];
+			a [i][c] = true;
+         }                 
         }            
                         
  // FEITO                              
