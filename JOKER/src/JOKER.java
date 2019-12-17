@@ -193,7 +193,7 @@ public class JOKER {
     	do{
             System.ou.println("What is your final answer?"); 
             answer = sc.next().charAt(0); 
-        } while( answer != a || answer != b || answer != c || answer != j || answer != A || answer != B || answer != C ||answer != J);
+        } while( answer != 'a' || answer != 'b' || answer != 'c' || answer != 'j' || answer != 'A' || answer != 'B' || answer != 'C' ||answer != 'J');
     	
     	return answer;
     }
@@ -214,9 +214,10 @@ public class JOKER {
 
     static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer, int randomNumber) {
     	// DIZER AO UTILIZADOR SE A RESPOSTA ESTÁ CERTA OU NÃo
+<<
 	    int correctAnswer= printOutcomeMessage(right, allOptions, randomNumber);
 	    
-    	if() {
+    	if(answer==correctAnswer) {
     		System.out.println("A resposta está correta!");
     	} else {
     		System.out.println("A resposta está errada!");
