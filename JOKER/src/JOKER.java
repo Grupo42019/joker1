@@ -169,15 +169,18 @@ public class JOKER {
     static void printOptions(String[][] options, boolean[] includedOptions, int randomQuestionNumber) {
     	
         for (int i = 0; i < options.length; i++){
-            System.out.println( options[randomQuestionNumber][i]);   
+            System.out.println( "The options are: ");
+            System.out.println( options[randomQuestionNumber][i]);
           }   
     }
 
     static int readAnswer(Scanner sc) {
     	// RECEBER A RESPOSTA DO UTILIZADOR
-    	
-    	System.out.println("Qual a resposta que gostaria de bloquear?");
-    	char answer = sc.next().charAt(0);
+        char answer;
+    	do{
+            System.ou.println("What is your final answer?"); 
+            answer = sc.next().charAt(0); 
+        } while( answer != a || answer != b || answer != c || answer != j || answer != A || answer != B || answer != C ||answer != J);
     	
     	return answer;
     }
