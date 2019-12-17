@@ -114,24 +114,23 @@ public class JOKER {
             // Imprimir Status
             
             printStatus(round, 
+                        
             // Imprimir Questões
                
-        printQuestions(questions);
+            printQuestions(questions);
 
             // Definir array de booleans para indicar quais opções de respostas serão apresentadas.
             // Definir variável de controle do Do-While loop abaixo
             
-            char answer;
+            char answer= readAnswer(sc);
             // Do-While loop, Imprimir Opções de Respostas
                   
-                   do{
-                     System.ou.println("What is your final answer?"); 
-                   } while( answer != a || answer != b || answer != c || answer != j || answer != A || answer != B || answer != C ||answer != J);
-                   
-                        
+            int answer = printAnswer(sc);
                    if( answer ==);
                     // Se a resposta do Concorrente estiver correta
                         // Atualizar os valores adequados
+                        
+                        moneyTreeIndex++;
                         // Prover feedback ao Concorrente
                     // Se a resposta do Concorrente estiver errada
                         // Penalizar os valores adequados (dica: são dois valores; considerar um array – veja o método `penalizePlayer()`)
@@ -173,7 +172,7 @@ public class JOKER {
           }   
     }
 
-    static int readAnswer(Scanner sc) {
+    static char readAnswer(Scanner sc) {
     	// RECEBER A RESPOSTA DO UTILIZADOR
     	
     	System.out.println("Qual a resposta que gostaria de bloquear?");
