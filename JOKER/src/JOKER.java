@@ -156,11 +156,11 @@ public class JOKER {
     
 //MÉTODOS
     
- // FEITO                      
+ // game status -FEITO                      
         static void printStatus(int round, int moneyEarned, int jokers) {
     	System.out.println("Your on round number "+round+", you have "+moneyEarned+" and "+jokers+" jokers.");
         } 
-  // boolean correct answers  
+  // boolean correct answers -FEITO  
         static void booleanAnswers(boolean [][] a, int [] b)  {
                for (int i = 0; i < 12; i++) {
 			int c = b[i];
@@ -168,7 +168,7 @@ public class JOKER {
          }                 
         }            
                         
- // FEITO                              
+ // Escolha random da pergunta -FEITO                              
         static int randomNumber(int min, int max) {
         int randomNumber = (int) (Math.random() * ((max - min) + 1)) + min;
         return randomNumber;   
