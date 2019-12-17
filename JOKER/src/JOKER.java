@@ -230,8 +230,8 @@ public class JOKER {
 		    
 	}    while (sai == correctAnswers(randomNumber);
 		    
-		    System.out.println("Uma das respostas que está incorreta é"  + allOptions [randomNumber][sai]);
-		    System.out.println("Tendo em conta esta informação, qual é a decisão final?"
+		    System.out.println("One of the incorect answers is:"  + allOptions [randomNumber][sai]);
+		    System.out.println("Taking that into account, whats your final decision?");
 		readAnswer(sc)	;
     }
    
@@ -250,6 +250,6 @@ public class JOKER {
     static void printConclusion(int moneyEarned, int jokers) {
     	// SITUAÇÃO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM
     
-    	System.out.println("Ganhou " +moneyEarned+ ("euros. At the moment you have " + jokers + " jokers."));
+    	System.out.println("You won " +moneyEarned+ ("euros. At the moment you have " + jokers + " jokers."));
     }
 }
