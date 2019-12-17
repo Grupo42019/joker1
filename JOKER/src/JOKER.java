@@ -210,8 +210,13 @@ public class JOKER {
     }
 	   if(answer==correctAnswer) {
     		System.out.println("A resposta está correta!");
-    	} else {
+	
+	   } else if (answer == 'J'|| answer == 'j'){	 
+		   
+		   
+       	} else {
     		System.out.println("A resposta está errada!");
+		   
     	} 
 	    return correctAnswer;
     }
