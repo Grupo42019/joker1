@@ -222,7 +222,17 @@ public class JOKER {
     }
 
     static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer, int randomNumber) {
-    	// DIZER AO UTILIZADOR SE A RESPOSTA ESTÁ CERTA OU NÃo
+	    
+    	int sai;
+	   
+	    do {
+		    sai = (int) (Math.random() * ((3 + 1));
+		    
+	}    while (sai == correctAnswers(randomNumber);
+		    
+		    System.out.println("Uma das respostas que está incorreta é"  + allOptions [randomNumber][sai]);
+		    System.out.println("Tendo em conta esta informação, qual é a decisão final?"
+	readAnswer(sc)	;	
     }
    
     static int safelyDecreaseJoker(int jokers) {
