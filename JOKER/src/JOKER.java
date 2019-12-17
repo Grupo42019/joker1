@@ -10,11 +10,11 @@ public class JOKER {
                               "ON the show RICK AND MORTY there is a amusing episode: Pickle Rick.\n Why did Rick turn into a pickle?",
                               "In the movie LORD OF THE RINGS, there is only one person who is strong enough.\n Who is never tempted by the ring?",
                               "In the historic movie HARRY POTTER there is a character that everyone adores and has a targic ending, Dobby.\n What would give Dobby his freadom?",
-                              "In STAR WARS there is a prominent doubt.\n Who killed Emperor?",
-                              "THE GOOD PLACE is a shopw that premiered in 2016. Among many twists and truns many things seemed to be wrong.\n What was wrong with Jianyu, the Buddhist Monk?",
+                              "In STAR WARS there is a prominent doubt.\n Who killed the Emperor?",
+                              "THE GOOD PLACE is a shopw that premiered in 2016. Among many twists and turns, many things seemed to be wrong.\n What was wrong with Jianyu, the Buddhist Monk?",
                               "The enigmatic PRISON BREAK made it to many peoples favourite show.\n What's the name of the caracther that lost his hand?",
                               "Many teens were hooked on the show GOSSIP GIRL, among other scenes, the love story between Chuck and Blair was very memorable.\n How did Blair win the prom?",
-                              "The show BOJACK HORSEMEN, is an american adult animated comedy.\n What is Bojack's job?",
+                              "The show BOJACK HORSEMAN, is an american adult animated comedy.\n What is Bojack's job?",
                               "STRANGER THINGS, is a show surrounded by science fiction and terror.\n How does Will's mother manage to comunicate with him?",
                               "The cientific show BIG BANG THEORY, made many families laugh since it's enjoyed by all ages.\n Why does the elevator not work?"};
         String[][] allOptions = {
