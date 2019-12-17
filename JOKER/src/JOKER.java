@@ -221,7 +221,7 @@ public class JOKER {
 	    return correctAnswer;
     }
 
-    static void applyJoker(boolean[] includedOptions, int correctAnswer, int randomNumber) {
+    static boolean[] applyJoker(Scanner sc, int [] correctAnswer, int randomNumber, boolean [][] allOptions) {
 	    
     	int sai;
 	   
