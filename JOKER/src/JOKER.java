@@ -122,6 +122,7 @@ public class JOKER {
             // Definir array de booleans para indicar quais opções de respostas serão apresentadas.
             // Definir variável de controle do Do-While loop abaixo
             
+            int questionOptions= printOptions( allOptions, boolean, randomQuestionNumber);    
             char answer= readAnswer(sc);
             // Do-While loop, Imprimir Opções de Respostas
                   
