@@ -208,20 +208,16 @@ public class JOKER {
 			   System.out.println(correctAnswer);
 	}		    
     }
-	    
+	   if(answer==correctAnswer) {
+    		System.out.println("A resposta está correta!");
+    	} else {
+    		System.out.println("A resposta está errada!");
+    	} 
 	    return correctAnswer;
     }
 
     static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer, int randomNumber) {
     	// DIZER AO UTILIZADOR SE A RESPOSTA ESTÁ CERTA OU NÃo
-<<
-	    int correctAnswer= printOutcomeMessage(right, allOptions, randomNumber);
-	    
-    	if(answer==correctAnswer) {
-    		System.out.println("A resposta está correta!");
-    	} else {
-    		System.out.println("A resposta está errada!");
-    	}
     }
    
     static int safelyDecreaseJoker(int jokers) {
