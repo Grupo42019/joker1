@@ -215,9 +215,10 @@ public class JOKER {
 
     static boolean[] applyJoker(boolean[] includedOptions, int correctAnswer) {
     	// DIZER AO UTILIZADOR SE A RESPOSTA ESTÁ CERTA OU NÃo
+	    
 	    int correctAnswer= printOutcomeMessage();
 	    
-    	if() {
+    	if(answer==correctAnswer) {
     		System.out.println("A resposta está correta!");
     	} else {
     		System.out.println("A resposta está errada!");
