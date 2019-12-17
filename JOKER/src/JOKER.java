@@ -159,10 +159,10 @@ public class JOKER {
     System.out.println(question[randomQuestionNumber]);	
    }
 // DÚVIDAS
-    static void printOptions(String[][] options, boolean[] includedOptions, int round) {
+    static void printOptions(String[][] options, boolean[] includedOptions, int randomQuestionNumber) {
     	
         for (int i = 0; i < options.length; i++){
-            System.out.println( options[round][i]);   
+            System.out.println( options[randomQuestionNumber][i]);   
           }   
     }
 
