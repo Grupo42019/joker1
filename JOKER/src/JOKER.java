@@ -146,11 +146,17 @@ public class JOKER {
  // FEITO                      
         static void printStatus(int round, int moneyEarned, int jokers) {
     	System.out.println("Your on round number "+round+", you have "+moneyEarned+" and "+jokers+" jokers.");
-    }
+        }                       
+ // FEITO       
+        static int randomNumber(int min, int max) {
+        int randomNumber = (int) (Math.random() * ((max - min) + 1)) + min;
+        return randomNumber;   
+        }
 // FEITO
-    static void printQuestion(int round, String [] question) {	
-    System.out.println(question[round]);
-    	
+    static void printQuestion(int round, String [] question) {
+        
+    int randomQuestionNumber= randomNumber( 0, 11);
+    System.out.println(question[randomQuestionNumber]);	
    }
 // DÚVIDAS
     static void printOptions(String[][] options, boolean[] includedOptions, int round) {
