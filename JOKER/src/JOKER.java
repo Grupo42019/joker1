@@ -152,8 +152,14 @@ public class JOKER {
  // FEITO                      
         static void printStatus(int round, int moneyEarned, int jokers) {
     	System.out.println("Your on round number "+round+", you have "+moneyEarned+" and "+jokers+" jokers.");
-        }                       
- // FEITO       
+        } 
+  // boolean correct answers  
+        static void booleanAnswers()  {
+               
+                        
+        }            
+                        
+ // FEITO                              
         static int randomNumber(int min, int max) {
         int randomNumber = (int) (Math.random() * ((max - min) + 1)) + min;
         return randomNumber;   
