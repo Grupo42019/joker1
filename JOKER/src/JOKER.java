@@ -255,21 +255,29 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
 // A RESPOSTA ESTÁ ERRADO LOGO APLICAR AS CONSEQUÊNCIAS -FEITO		    
     static int[] penalizePlayer(int jokers, int moneyTreeIndex) {
     
-	int jokers;    
+	if(jokers>=3){    
+	    jokers= jokers-3;
+	}
+	    
+	int jokers; 
+	  switch (jokers) {  
 	    //no main se a resposta tiver errada cxhmar no main
-	    case 3: //( jokers>=3);
-		jokers= jokers-3;
-		 
+	 
 	    case 2: //( jokers=2);
 		jokers=jokers-2;
 		 moneyTreeIndex--;
+	        break;
+	    
 		 
 	    case 1: //( jokers=1);
 		 jokers=jokers-1;
 		 moneyTreeIndex= moneyTreeIndex-2;
+	         break;
 		 
 	    case 0: //(jokers=0) ;
 		  moneyTreeIndex= moneyTreeIndex-3;
+	          break;
+	}		  
     }
 
 // SITUAÇÃO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM -fAZER (podemos fazer uma matriz)
