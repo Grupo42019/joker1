@@ -103,7 +103,7 @@ public class JOKER {
         
         
         // VARIABLES -----------------------//
-        int[] moneyTree = {0, 200, 500, 1000, 3000, 10000, 50000};
+        int[] moneyTree = {0, 200, 500, 1000, 3000, 10000, 50000};  //Dúvida: é preciso fazer método para money tree? como se põe imagens e fonts? como se faz timer?
         int moneyTreeIndex = 0;
         int jokers = 7;
         Scanner scanner = new Scanner(System.in);
@@ -174,11 +174,13 @@ public class JOKER {
         int randomNumber = (int) (Math.random() * ((max - min) + 1)) + min;
         return randomNumber;   
         }
-// DÚVIDAS
+
+ // Imprimir a pergunta random -FEITO		
     static void printQuestion(String [] question, int a) {
     System.out.println(question[randomNumber]);	
    }
-// DÚVIDAS
+			
+//Imprimir as opções- DÚVIDAS: no included options não percebemos que boolean é
     static void printOptions(String[][] options, boolean[] includedOptions, int randomQuestionNumber) {
     	
         for (int i = 0; i < options.length; i++){
@@ -186,9 +188,9 @@ public class JOKER {
             System.out.println( options[randomQuestionNumber][i]);
           }   
     }
-
+			
+// RECEBER A RESPOSTA DO UTILIZADOR - FEITO
     static char readAnswer(Scanner sc) {
-    	// RECEBER A RESPOSTA DO UTILIZADOR
         char answer;
     	do{
             System.ou.println("What is your final answer?"); 
@@ -198,6 +200,7 @@ public class JOKER {
     	return answer;
     }
 
+//Verificação da resposta do utilizador -VERIFICAR linha 217			
     static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  questionOptions, int randomQuestionNumber) {
     
     	System.out.println("The correct answer is: ");
@@ -211,7 +214,7 @@ public class JOKER {
 	   if(answer==correctAnswer) {
     		System.out.println("The answer is correct!");
 	
-	   } else if (answer == 'J'|| answer == 'j'){	 
+	   } else if (answer == 'J'|| answer == 'j'){	 //DUVIDA: PODE SER UM j OU TEM QUE SER UM 5?
 		   
 		   
        	} else {
@@ -220,7 +223,9 @@ public class JOKER {
     	} 
 	    return correctAnswer;
     }
+			
 
+//Utilizador pede um joker, o que acontece -FEITO
     static boolean[] applyJoker(Scanner sc, int [] correctAnswer, int randomNumber, boolean [][] allOptions, int jokers) {
 	    
     	int sai;
@@ -238,19 +243,16 @@ public class JOKER {
 				       
 				       
     }
-   
-    static int safelyDecreaseJoker(int jokers) {
-    	// O UTILIZADOR UTILIZOU UM JOKER
-	    
+   // O UTILIZADOR UTILIZOU UM JOKER -DUVIDAS: só se põe quando ele pede ou quando ele erra tmb?
+    static int safelyDecreaseJoker(int jokers) {    
 	 jokers--;
 	    
     	System.out.println("The user has "+jokers+" jokers.");
     	return jokers;
     }
 
-		    
+// A RESPOSTA ESTÁ ERRADO LOGO APLICAR AS CONSEQUÊNCIAS -FEITO		    
     static int[] penalizePlayer(int jokers, int moneyTreeIndex) {
-    	// A RESPOSTA ESTÁ ERRADO LOGO APLICAR AS CONSEQUÊNCIAS
     	
 	 if (answer!= correctAnswer && joker>=3) {
 		jokers= jokers-3;
@@ -267,9 +269,8 @@ public class JOKER {
 		  moneyTreeIndex= moneyTreeIndex-3;
     }
 
+// SITUAÇÃO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM -fAZER (podemos fazer uma matriz)
     static void printConclusion(int moneyEarned, int jokers) {
-    	// SITUAÇÃO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM
-    
     	System.out.println("You won " +moneyEarned+ ("euros. At the moment you have " + jokers + " jokers."));
     }
 }
