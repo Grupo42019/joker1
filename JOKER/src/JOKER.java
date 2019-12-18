@@ -136,13 +136,21 @@ public class JOKER {
         printQuestions(questions, randomQuestion);
 	//Imprimir Opções de Respostas, tendo em conta as condições
         printOptions( allOptions, questionNumber);    
-         char answer= readAnswer(sc);
-        
-           if( answer ==);
-                    // Se a resposta do Concorrente estiver correta
-                        // Atualizar os valores adequados
+        char answer= readAnswer(sc);
+	//Se a resposta FOR A, B, C, D
+        if( answer == 'A' ||answer == 'B' ||answer == 'C' ||answer == 'D' ||){
+	char correctAnswer= checkAnswers (booleanAnswers,allOptions, randomQuestion);	
+        printOutcomeMessage(jokers, answer, correctAnswer, moneyTreeIndex);
+	//Se a resposta FOR J	
+	}else if(answer == 'J'){	
+        applyJoker(correctAnswer, randomQuestion, allOptions, jokers);
+	safelyDecreaseJoker(joker);
+	char answer= readAnswer(sc);
+	char correctAnswer= checkAnswers (booleanAnswers,allOptions, randomQuestion);	
+        printOutcomeMessage(jokers, answer, correctAnswer, moneyTreeIndex);
+	// Atualizar os valores adequados
                         
-                        moneyTreeIndex++;
+                       
                         // Prover feedback ao Concorrente
                     // Se a resposta do Concorrente estiver errada
                         // Penalizar os valores adequados (dica: são dois valores; considerar um array – veja o método `penalizePlayer()`)
@@ -221,7 +229,7 @@ static char checkAnswer(boolean [][] booleanAnswers, String [][]  allOptions, in
     }
 			
 //Verificar se a opção escolhida pelo utilizador é a certa -PODE ESTAR MAL		
-    static char printOutcomeMessage(char answer, char correctAnswer, int moneyTreeIndex ) {
+    static void printOutcomeMessage (int joker, char answer, char correctAnswer, int moneyTreeIndex ) {
 	   if(answer==correctAnswer) {
     		System.out.println("The answer is correct!"); 
 		   moneyTreeIndex++;
