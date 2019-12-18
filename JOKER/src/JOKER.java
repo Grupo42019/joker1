@@ -223,54 +223,52 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
        	} else {
     		System.out.println("The answer is wrong!");
 		   //fazer método de perder money tree
+		   //chamar jokeroeanlise
     	} 
 	    
     }
-	
-//RESPOSTA é: joker	
 			
-
-//Utilizador pede um joker, o que acontece -FEITO
-    static boolean[] applyJoker(Scanner sc, int [] correctAnswer, int randomNumber, boolean [][] allOptions, int jokers) {
-	    
-    	int sai;
-	   
+//O que acontece quando utilizador pede joker -FEITO
+    static void applyJoker( int [] correctAnswer, int randomNumber, boolean [][] allOptions, int jokers) {
+	    int sai;
 	    do {
-		    sai = (int) (Math.random() * ((3 + 1));
+	     sai = (int) (Math.random() * ((3 + 1));
 		    
-	}    while (sai == correctAnswers(randomNumber);
-		    
-		    System.out.println("One of the incorect answers is:"  + allOptions [randomNumber][sai]);
-		    System.out.println("Taking that into account, whats your final decision?");
-		readAnswer(sc)	;
-				       
-		int jokersAvailable= safelyDecreaseJoker(jokers);
-				       
-				       
+	    }while (sai == correctAnswers(randomNumber);
+		    System.out.println("One of the incorect answers is:"  + allOptions [randomNumber][sai] +/n +"Taking that into account...");		    	       
     }
-   // O UTILIZADOR UTILIZOU UM JOKER -DUVIDAS: só se põe quando ele pede ou quando ele erra tmb?
+		    
+		    
+// O utilizador quer um Joker -FEITO
     static int safelyDecreaseJoker(int jokers) {    
-	 jokers--;
+	
+	if(joker>0){    
+	jokers--;
+		
+	}else{	
+	System.out.println("This feature is no longer available.");
+	}
 	    
-    	System.out.println("The user has "+jokers+" jokers.");
     	return jokers;
     }
 
 // A RESPOSTA ESTÁ ERRADO LOGO APLICAR AS CONSEQUÊNCIAS -FEITO		    
     static int[] penalizePlayer(int jokers, int moneyTreeIndex) {
-    	
-	 if (answer!= correctAnswer && joker>=3) {
+    
+	int jokers;    
+	    //no main se a resposta tiver errada cxhmar no main
+	    case 1: ( jokers>=3);
 		jokers= jokers-3;
 		 
-	 }else if (answer!= correctAnswer && jokers=2) {
+	    case 2: (jokers=2);
 		jokers=jokers-2;
 		 moneyTreeIndex--;
 		 
-	 }else if (answer!= correctAnswer && jokers=1) {
+	    case 3: (jokers=1);
 		 jokers=jokers-1;
 		 moneyTreeIndex= moneyTreeIndex-2;
 		 
-	 }else if (answer!= correctAnswer && jokers=0) {
+	    case 4: (jokers=0) ;
 		  moneyTreeIndex= moneyTreeIndex-3;
     }
 
