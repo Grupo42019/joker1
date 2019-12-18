@@ -17,6 +17,9 @@ public class JOKER {
                               "The show BOJACK HORSEMAN, is an american adult animated comedy.\n What is Bojack's job?",
                               "STRANGER THINGS, is a show surrounded by science fiction and terror.\n How does Will's mother manage to comunicate with him?",
                               "The cientific show BIG BANG THEORY, made many families laugh since it's enjoyed by all ages.\n Why does the elevator not work?"};
+	
+    // QUESTION'S RELATED VARIABLES  
+	    //Options
         String[][] allOptions = {
             {
                 "A.Yes",
@@ -98,13 +101,8 @@ public class JOKER {
 	boolean [][] rigth = new boolean [12][4];
 	    
 	booleanAnswers(boolean [][] rigth, int [] correctAnswers);
-	    
-
-         // QUESTION'S RELATED VARIABLES
-        
-        
-        
-        // VARIABLES -----------------------//
+	   
+        // Variables -----------------------//
         int[] moneyTree = {0, 200, 500, 1000, 3000, 10000, 50000};  
         int moneyTreeIndex = 0;
 	int moneyEarned = money(moneyTreeIndex, moneyTree);
@@ -135,37 +133,27 @@ public class JOKER {
 	int randomQuestion = randomNumber(0,11);
         printQuestions(questions, randomQuestion);
 	//Imprimir Opções de Respostas, tendo em conta as condições
-        printOptions( allOptions, questionNumber);    
+        printOptions( allOptions, questionNumber);  
+	//Ler resposta	
         char answer= readAnswer(sc);
 	//Se a resposta FOR A, B, C, D
         if( answer == 'A' ||answer == 'B' ||answer == 'C' ||answer == 'D' ||){
+	//Verificar Resposta	
 	char correctAnswer= checkAnswers (booleanAnswers,allOptions, randomQuestion);	
         printOutcomeMessage(jokers, answer, correctAnswer, moneyTreeIndex);
 	//Se a resposta FOR J	
 	}else if(answer == 'J'){	
         applyJoker(correctAnswer, randomQuestion, allOptions, jokers);
 	safelyDecreaseJoker(joker);
+	//Ler resposta	após uso de joker
 	char answer= readAnswer(sc);
+	//Verificar Resposta	
 	char correctAnswer= checkAnswers (booleanAnswers,allOptions, randomQuestion);	
-        printOutcomeMessage(jokers, answer, correctAnswer, moneyTreeIndex);
-	// Atualizar os valores adequados
-                        
-                       
-                        // Prover feedback ao Concorrente
-                    // Se a resposta do Concorrente estiver errada
-                        // Penalizar os valores adequados (dica: são dois valores; considerar um array – veja o método `penalizePlayer()`)
-                        // Prover feedback ao Concorrente
-                // Senão Se o Concorrente escolher um Joker
-                    // Se houver Joker disponível
-                        // Alterar o array de booleans que indica as opções a serem apresentadas (omitir uma incorreta)
-                        // Atualizar o número de Jokers (atenção para o valor não ser negativo)
-                    // Senão
-                        // Prover feedback ao Concorrente de que não há Jokers
-                // Senão
-                    // Prover feedback de que o input não é válido.
-
-        // Imprimir conclusão do Jogo
+        printOutcomeMessage(jokers, answer, correctAnswer, moneyTreeIndex);	
     }
+       // Imprimir conclusão do Jogo
+	printConclusion(moneyEarned, Jokers);	
+}
 			
  //Dúvida:como se põe imagens e fonts? swing   
 			
@@ -297,11 +285,9 @@ static int money(int moneyTreeIndex, int [] moneyTree)
 	           }  else if (moneyTreeIndex>6 ) {
 			    moneyEarned=50000; 
 		   }
-		    return moneyEarned;
-		    
+		    return moneyEarned;		    
  }
 	    
-
 // SITUAÇÃO final: quanto DINHEIRO -FEITO
     static void printConclusion(int moneyEarned, int jokers) {
     	System.out.println("You won " +moneyEarned+ "euros.);
