@@ -181,7 +181,7 @@ public class JOKER {
     System.out.println(question[randomNumber]);	
    }
 			
-//Imprimir as opções- DÚVIDAS: no included options não percebemos que boolean é não precisa de ser matriz, basta escolher a posiçao da matriz que vai retornar as respostas
+//Imprimir as opções-FEITO
     static void printOptions(String[][] allOptions, int randomNumber) {
     	
  	System.out.println( "The options are: ");
@@ -202,9 +202,8 @@ public class JOKER {
     	
     	return answer;
     }
-
-//RESPOSTA é: joker			
-//Identificar resposta correta
+			
+//Identificar resposta correta -FEITO
 static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOptions, int randomNumber ) {
     
     	System.out.println("The correct answer is: "); 
@@ -215,7 +214,7 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
 		    return correctAnswer;
     }
 			
-//Verificar se a opção escolhida pelo utilizador é a certa 			
+//Verificar se a opção escolhida pelo utilizador é a certa -ACABAR		
     static char printOutcomeMessage(char answer, char correctAnswer, int moneyTreeIndex ) {
 	   if(answer==correctAnswer) {
     		System.out.println("The answer is correct!"); 
@@ -227,6 +226,8 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
     	} 
 	    
     }
+	
+//RESPOSTA é: joker	
 			
 
 //Utilizador pede um joker, o que acontece -FEITO
