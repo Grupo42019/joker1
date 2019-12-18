@@ -194,9 +194,11 @@ public class JOKER {
     static char readAnswer(Scanner sc) {
         char answer;
     	do{
-            System.ou.println("What is your final answer?"); 
-            answer = (sc.next().charAt(0)).toUpperCase();
-        } while(answer != 'A' || answer != 'B' || answer != 'C' || answer != 'D' ||answer != 'J');
+            System.out.println("What is your final answer?"); 
+            answer= Character.toUpperCase(sc.next().charAt(0));
+            System.out.println(answer);
+            
+        } while(answer != 'A' && answer != 'B' &&  answer != 'C' &&  answer != 'D' &&  answer != 'J');
     	
     	return answer;
     }
