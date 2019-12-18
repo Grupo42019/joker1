@@ -195,8 +195,8 @@ public class JOKER {
         char answer;
     	do{
             System.ou.println("What is your final answer?"); 
-            answer = sc.next().charAt(0); 
-        } while( answer != 'a' || answer != 'b' || answer != 'c' || answer != 'd' || answer != 'j' || answer != 'A' || answer != 'B' || answer != 'C' || answer != 'D' ||answer != 'J');
+            answer = (sc.next().charAt(0)).toUpperCase();
+        } while(answer != 'A' || answer != 'B' || answer != 'C' || answer != 'D' ||answer != 'J');
     	
     	return answer;
     }
