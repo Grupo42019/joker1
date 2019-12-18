@@ -190,7 +190,7 @@ public class JOKER {
           }   
     }
 			
-// RECEBER A RESPOSTA DO UTILIZADOR - FEITO
+// RECEBER A RESPOSTA DO UTILIZADOR- FEITO
     static char readAnswer(Scanner sc) {
         char answer;
     	do{
@@ -203,27 +203,29 @@ public class JOKER {
     	return answer;
     }
 
-			
-//Verificação da resposta do utilizador -VERIFICAR linha 217			
-    static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  questionOptions, int randomQuestionNumber) {
+//RESPOSTA é: joker			
+//Identificar resposta correta
+static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOptions, int randomNumber ) {
     
-    	System.out.println("The correct answer is: "); // podemos fazer no main, era mais facil
-	    
+    	System.out.println("The correct answer is: "); 
 	    for (int i = 0; i < 4; i ++) {
-		    if ( booleanAnswers[randomQuestionNumber][i] == true){
-			   char correctAnswer= questionOptions[randomQuestionNumber][i];
-			  
-	}		    
+		    if ( booleanAnswers[randomNumber][i] == true){
+			   char correctAnswer= (allOptions[randomNumber][i]).charAt(0);
+	}	
+		    return correctAnswer;
     }
+			
+//Verificar se a opção escolhida pelo utilizador é a certa 			
+    static char printOutcomeMessage(char answer, char correctAnswer, int moneyTreeIndex ) {
 	   if(answer==correctAnswer) {
     		System.out.println("The answer is correct!"); 
-		   
+		   moneyTreeIndex++;
 		   
        	} else {
     		System.out.println("The answer is wrong!");
-		   
+		   //fazer método de perder money tree
     	} 
-	    return correctAnswer;
+	    
     }
 			
 
