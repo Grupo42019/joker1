@@ -128,19 +128,17 @@ public class JOKER {
 	    
 	// GAME LOOP   
         for(round=0; round<12; round++){
+		
         // Imprimir Status
         printStatus(round, moneyEarned, jokers);
         // Imprimir Questões
 	int randomQuestion = randomNumber(0,11);
         printQuestions(questions, randomQuestion);
-	// Definir variável de controle do Do-While loop abaixo
-			
-            int questionOptions= printOptions( allOptions, boolean, questionNumber);    
-            char answer= readAnswer(sc);
-            // Do-While loop, Imprimir Opções de Respostas
-                  
-            int answer = printAnswer(sc);
-                   if( answer ==);
+	//Imprimir Opções de Respostas, tendo em conta as condições
+        printOptions( allOptions, questionNumber);    
+         char answer= readAnswer(sc);
+        
+           if( answer ==);
                     // Se a resposta do Concorrente estiver correta
                         // Atualizar os valores adequados
                         
@@ -212,7 +210,7 @@ public class JOKER {
     }
 			
 //Identificar resposta correta -FEITO
-static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOptions, int randomNumber ) {
+static char checkAnswer(boolean [][] booleanAnswers, String [][]  allOptions, int randomNumber ) {
     
     	System.out.println("The correct answer is: "); 
 	    for (int i = 0; i < 4; i ++) {
