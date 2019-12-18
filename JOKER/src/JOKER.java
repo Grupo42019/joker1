@@ -94,6 +94,7 @@ public class JOKER {
                     
         int[] correctAnswers ={3, 2, 1, 3, 0, 3, 2, 1, 0, 1, 2, 3};
 	    
+	// Definir array de booleans para indicar quais opções de respostas serão apresentadas.    
 	boolean [][] rigth = new boolean [12][4];
 	    
 	booleanAnswers(boolean [][] rigth, int [] correctAnswers);
@@ -106,6 +107,7 @@ public class JOKER {
         // VARIABLES -----------------------//
         int[] moneyTree = {0, 200, 500, 1000, 3000, 10000, 50000};  
         int moneyTreeIndex = 0;
+	int moneyEarned = money(moneyTreeIndex, moneyTree);
         int jokers = 7;
         Scanner scanner = new Scanner(System.in);
         
@@ -114,21 +116,24 @@ public class JOKER {
         // GAME OPENING
         Utils.printGreeting("JOKER", "$", false);
 
-        // GAME LOOP
+        // WELCOME SPEECH
+	System.out.println("Welcome to JOKER!/n
+			   You have the chance to win 50.000€.
+			   /nYou begin with 7 Jokers, they are used to eliminate an options and you simply have to insert \"J\".
+			   /nA wrong answer you go down levels. A right answer you go up a level.
+			   /nTo win 50k you must stay in the last level./nLet's play!
+			   /n!SPOILER ALERT! :P");		   
+	System.out.println("What is your name?");
+	string name= sc.nextLine();
+	    
+	// GAME LOOP   
         for(round=0; round<12; round++){
-
-        // For loop
-            // Imprimir Status
-            
-            printStatus(round, 
-                        
-            // Imprimir Questões
-	int questionNumber = randomNumber(0,11);
-               
-            printQuestions(questions, questionNumber);
-
-            // Definir array de booleans para indicar quais opções de respostas serão apresentadas.
-            // Definir variável de controle do Do-While loop abaixo
+        // Imprimir Status
+        printStatus(round, moneyEarned, jokers);
+        // Imprimir Questões
+	int randomQuestion = randomNumber(0,11);
+        printQuestions(questions, randomQuestion);
+	// Definir variável de controle do Do-While loop abaixo
 			
             int questionOptions= printOptions( allOptions, boolean, questionNumber);    
             char answer= readAnswer(sc);
