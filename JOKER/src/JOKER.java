@@ -180,8 +180,8 @@ public class JOKER {
     System.out.println(question[randomNumber]);	
    }
 			
-//Imprimir as opções- DÚVIDAS: no included options não percebemos que boolean é
-    static void printOptions(String[][] options, boolean[] includedOptions, int randomQuestionNumber) {
+//Imprimir as opções- DÚVIDAS: no included options não percebemos que boolean é não precisa de ser matriz, basta escolher a posiçao da matriz que vai retornar as respostas
+    static void printOptions(String[] options, boolean[] includedOptions, int randomQuestionNumber) {
     	
         for (int i = 0; i < options.length; i++){
             System.out.println( "The options are: ");
@@ -203,7 +203,7 @@ public class JOKER {
 //Verificação da resposta do utilizador -VERIFICAR linha 217			
     static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  questionOptions, int randomQuestionNumber) {
     
-    	System.out.println("The correct answer is: ");
+    	System.out.println("The correct answer is: "); // podemos fazer no main, era mais facil
 	    
 	    for (int i = 0; i < 4; i ++) {
 		    if ( booleanAnswers[randomQuestionNumber][i] == true){
@@ -214,7 +214,7 @@ public class JOKER {
 	   if(answer==correctAnswer) {
     		System.out.println("The answer is correct!");
 	
-	   } else if (answer == 'J'|| answer == 'j'){	 //DUVIDA: PODE SER UM j OU TEM QUE SER UM 5?
+	   } else if (answer == 'J'|| answer == 'j'){	 //DUVIDA: PODE SER UM j OU TEM QUE SER UM 5? formas mais eficiente, 
 		   
 		   
        	} else {
