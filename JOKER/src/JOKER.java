@@ -103,7 +103,7 @@ public class JOKER {
         
         
         // VARIABLES -----------------------//
-        int[] moneyTree = {0, 200, 500, 1000, 3000, 10000, 50000};  //Dúvida: é preciso fazer método para money tree? como se põe imagens e fonts? como se faz timer?
+        int[] moneyTree = {0, 200, 500, 1000, 3000, 10000, 50000};  
         int moneyTreeIndex = 0;
         int jokers = 7;
         Scanner scanner = new Scanner(System.in);
@@ -154,7 +154,9 @@ public class JOKER {
 
         // Imprimir conclusão do Jogo
     }
-    
+			
+ //Dúvida:como se põe imagens e fonts? swing   
+			
 //MÉTODOS
     
  // game status -FEITO                      
@@ -259,16 +261,12 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
 	    jokers= jokers-3;
 	}
 	    
-	int jokers; 
 	  switch (jokers) {  
-	    //no main se a resposta tiver errada cxhmar no main
-	 
 	    case 2: //( jokers=2);
 		jokers=jokers-2;
 		 moneyTreeIndex--;
-	        break;
-	    
-		 
+	         break;
+	    	 
 	    case 1: //( jokers=1);
 		 jokers=jokers-1;
 		 moneyTreeIndex= moneyTreeIndex-2;
@@ -279,6 +277,10 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
 	          break;
 	}		  
     }
+//money tree
+
+		    
+		    
 
 // SITUAÇÃO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM -fAZER (podemos fazer uma matriz)
     static void printConclusion(int moneyEarned, int jokers) {
