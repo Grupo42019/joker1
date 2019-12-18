@@ -257,18 +257,18 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
     
 	int jokers;    
 	    //no main se a resposta tiver errada cxhmar no main
-	    case 1: ( jokers>=3);
+	    case 3: //( jokers>=3);
 		jokers= jokers-3;
 		 
-	    case 2: (jokers=2);
+	    case 2: //( jokers=2);
 		jokers=jokers-2;
 		 moneyTreeIndex--;
 		 
-	    case 3: (jokers=1);
+	    case 1: //( jokers=1);
 		 jokers=jokers-1;
 		 moneyTreeIndex= moneyTreeIndex-2;
 		 
-	    case 4: (jokers=0) ;
+	    case 0: //(jokers=0) ;
 		  moneyTreeIndex= moneyTreeIndex-3;
     }
 
