@@ -217,7 +217,7 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
 		    return correctAnswer;
     }
 			
-//Verificar se a opção escolhida pelo utilizador é a certa -ACABAR		
+//Verificar se a opção escolhida pelo utilizador é a certa -PODE ESTAR MAL		
     static char printOutcomeMessage(char answer, char correctAnswer, int moneyTreeIndex ) {
 	   if(answer==correctAnswer) {
     		System.out.println("The answer is correct!"); 
@@ -225,8 +225,7 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
 		   
        	} else {
     		System.out.println("The answer is wrong!");
-		   //fazer método de perder money tree
-		   //chamar jokeroeanlise
+		   int penalize= penalizePlayer(jokers, moneyTreeIndex)
     	} 
 	    
     }
@@ -256,7 +255,7 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
     }
 
 // A RESPOSTA ESTÁ ERRADO LOGO APLICAR AS CONSEQUÊNCIAS -FEITO		    
-    static int[] penalizePlayer(int jokers, int moneyTreeIndex) {
+    static int penalizePlayer(int jokers, int moneyTreeIndex) {
     
 	if(jokers>=3){    
 	    jokers= jokers-3;
