@@ -161,6 +161,7 @@ public class JOKER {
         static void printStatus(int round, int moneyEarned, int jokers) {
     	System.out.println("Your on round number "+round+", you have "+moneyEarned+" and "+jokers+" jokers.");
         } 
+			
   // boolean correct answers -FEITO  
         static void booleanAnswers(boolean [][] a, int [] b)  {
                for (int i = 0; i < 12; i++) {
@@ -176,16 +177,16 @@ public class JOKER {
         }
 
  // Imprimir a pergunta random -FEITO		
-    static void printQuestion(String [] question, int a) {
+    static void printQuestion(String [] question, int randomNumber) {
     System.out.println(question[randomNumber]);	
    }
 			
 //Imprimir as opções- DÚVIDAS: no included options não percebemos que boolean é não precisa de ser matriz, basta escolher a posiçao da matriz que vai retornar as respostas
-    static void printOptions(String[] options, boolean[] includedOptions, int randomQuestionNumber) {
+    static void printOptions(String[][] allOptions, int randomNumber) {
     	
-        for (int i = 0; i < options.length; i++){
-            System.out.println( "The options are: ");
-            System.out.println( options[randomQuestionNumber][i]);
+ 	System.out.println( "The options are: ");
+        for (int i = 0; i < allOptions[0].length; i++){
+	 System.out.println( allOptions[randomNumber][i]);
           }   
     }
 			
