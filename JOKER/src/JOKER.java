@@ -201,6 +201,7 @@ public class JOKER {
     	return answer;
     }
 
+			
 //Verificação da resposta do utilizador -VERIFICAR linha 217			
     static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  questionOptions, int randomQuestionNumber) {
     
@@ -209,13 +210,11 @@ public class JOKER {
 	    for (int i = 0; i < 4; i ++) {
 		    if ( booleanAnswers[randomQuestionNumber][i] == true){
 			   char correctAnswer= questionOptions[randomQuestionNumber][i];
-			   System.out.println(correctAnswer);
+			  
 	}		    
     }
 	   if(answer==correctAnswer) {
-    		System.out.println("The answer is correct!");
-	
-	   } else if (answer == 'J'|| answer == 'j'){	 //DUVIDA: PODE SER UM j OU TEM QUE SER UM 5? formas mais eficiente, 
+    		System.out.println("The answer is correct!"); 
 		   
 		   
        	} else {
