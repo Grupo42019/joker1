@@ -278,7 +278,7 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
 	}
 	    return jokers, moneyTreeIndex;
     }
-//money tree
+//money tree -FEITO
 static int money(int moneyTreeIndex, int [] moneyTree)	
 	int moneyEarned= moneyTree[moneyTreeIndex];	
 		    
@@ -292,8 +292,8 @@ static int money(int moneyTreeIndex, int [] moneyTree)
  }
 	    
 
-// SITUAÇÃO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM -fAZER (podemos fazer uma matriz)
+// SITUAÇÃO final: quanto DINHEIRO -FEITO
     static void printConclusion(int moneyEarned, int jokers) {
-    	System.out.println("You won " +moneyEarned+ ("euros. At the moment you have " + jokers + " jokers."));
+    	System.out.println("You won " +moneyEarned+ "euros.);
     }
 }
