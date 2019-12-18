@@ -97,6 +97,7 @@ public class JOKER {
 	boolean [][] rigth = new boolean [12][4];
 	    
 	booleanAnswers(boolean [][] rigth, int [] correctAnswers);
+	    
 
          // QUESTION'S RELATED VARIABLES
         
@@ -259,8 +260,7 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
     
 	if(jokers>=3){    
 	    jokers= jokers-3;
-	}
-	    
+	}   
 	  switch (jokers) {  
 	    case 2: //( jokers=2);
 		jokers=jokers-2;
@@ -275,12 +275,22 @@ static char printOutcomeMessage(boolean [][] booleanAnswers, String [][]  allOpt
 	    case 0: //(jokers=0) ;
 		  moneyTreeIndex= moneyTreeIndex-3;
 	          break;
-	}		  
+	}
+	    return jokers, moneyTreeIndex;
     }
 //money tree
-
+static int money(int moneyTreeIndex, int [] moneyTree)	
+	int moneyEarned= moneyTree[moneyTreeIndex];	
 		    
+		    if (moneyTreeIndex<=0 ) {
+			    moneyEarned=0;
+	           }  else if (moneyTreeIndex>6 ) {
+			    moneyEarned=50000; 
+		   }
+		    return moneyEarned;
 		    
+ }
+	    
 
 // SITUAÇÃO CORRENTE: SE GANHOU DINHEIRO OU PERDEU, QUANTOS JOKERS TEM -fAZER (podemos fazer uma matriz)
     static void printConclusion(int moneyEarned, int jokers) {
