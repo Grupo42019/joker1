@@ -169,7 +169,7 @@ public class FINAL {
 	
 	//game status -FEITO                      
 	static void printStatus (int round, int moneyEarned, int jokers) {
-		System.out.println("\nYou are on round number "+round+", you have "+moneyEarned+" euros and "+jokers+" jokers.\n");
+		System.out.println("\nYou are on round number "+(round+1) +", you have "+moneyEarned+" euros and "+jokers+" jokers.\n");
 	} //END printStatus
 	
 	//boolean correct answers -FEITO  
